@@ -46,4 +46,23 @@
 
 * Write a program which calls three procedures. The first should continue to read characters from the keyboard and store in RAM until Enter is pressed. The second should convert any upper case characters in the stored text to lower case (do not convert any other characters). The third should display the complete line of text on the VDU display. (update comments and save as Task 17)
 
+# Lift Task
+
+* Detect when the lift nears the top of the shaft then turn off the motor before it crashes.
+
+
+(If you have to make your simulation run Faster to avoid crashing before the limit can be detected, you should consider restructuring your code)
+* Detect a click of the DOWN button then turn on the DOWN motor.
+(You may allow the lift to crash into the bottom of the shaft)
+* Detect when the lift nears the bottom of the shaft then turn off the motor before it crashes.
+
+(It should now be impossible to crash the lift no matter when or how many times the UP or DOWN buttons are clicked)
+* Display the lift status on the memory mapped display starting at [C0] without crashing the lift.
+(Lift status must be exactly: BOTTOM or UP or TOP or DOWN)
+* Cause the lift to return to the bottom of the shaft immediately if the Enter key (En) is pressed on the numeric keypad peripheral device.
+
+(After returning to the bottom of the shaft, the lift must operate normally)
+
+
+
 
